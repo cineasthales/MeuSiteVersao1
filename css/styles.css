@@ -1,0 +1,504 @@
+/* Criado por Thales Cézar Castro */
+/* Obs: esta folha de estilos adota o conceito de Mobile First */
+
+/* estilo geral da página */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #0f0026;
+    background-image: url('bg.png'); 
+    color: white;
+    height: 100%;
+}
+
+#tudo {
+    min-height: 100%;
+    position: relative;
+}
+
+/* estilo geral de parágrafos */
+
+p {
+    font-size: 1em;
+}
+
+/* estilo geral de links */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    background-color: white;
+    color: #1e004d; 
+}
+
+/* estilo geral do cabeçalho */
+
+header {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#logoSite {
+    width: 80%;
+    max-width: 16em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+#logoSiteLink:hover,
+#logoSiteLink:focus,
+#logoSiteLink:active{
+    text-decoration: none;
+    background-color: transparent;    
+}
+
+/* estilo dos links de navegação */
+
+.linksList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.links {    
+    border-top: 0.1em solid white;
+}
+
+/*.links:last-child {
+    border-bottom: 0.1em solid white;
+}*/
+
+.links a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-transform: lowercase;
+}
+
+.links a:hover,
+.links a:focus,
+.links a:active {
+    background-color: white;
+    color: #1e004d;
+}
+
+/* estilo do ícone do menu de navegação */
+
+.menu-icon {
+    padding: 0;
+    margin: 0;
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+/* estilo da parte do menu de navegação */
+
+.navegacao {    
+    background-color: #1e004d;
+    border-top: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+    padding: 0;
+    margin: 0;
+    height: 5.5em;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -o-transition: height 1s;
+    -ms-transition: height 1s;
+    transition: height 1s;
+}
+
+.navegacao:hover, .navegacao:focus, navegacao:active {
+    height: 16.8em;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -o-transition: height 1s;
+    -ms-transition: height 1s;
+    transition: height 1s;
+}
+
+/* estilo geral da parte principal da página */
+
+main {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 7em;
+}
+
+/* estilo geral do título do site */
+
+h1 {
+    display: none;
+}
+
+/* estilo dos títulos da parte principal de cada página */
+
+h2 {
+    background-color: #1e004d;
+    width: 5em;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-top: 0.01em solid white;
+    border-bottom: 0.01em solid white;
+    margin-top: 1.5em;
+    font-family: verdana;
+}
+
+/* estilo geral do "sobre" da index */
+
+#sobre {
+    width: 100%;
+}
+
+/* estilo geral do texto descritivo no "sobre" da index */
+
+#descricao {
+    text-align: justify;    
+}
+
+/* estilo da div que controla o posicionamento da foto do index */
+
+#divfoto {
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+/* estilo da da foto do index */
+
+#fotoThales {
+    width: 100%;
+    max-width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+}
+
+/* estilo geral do rodapé */
+
+footer {
+    background-color: #1e004d;
+    border-top: 0.1em solid white;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* estilo dos links no rodapé */
+
+.footerList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footerLinks {
+    display: inline-block;
+    font-size: 0.8em;
+    background-color: #0f0026;
+    margin-right: 0.5em;
+}
+
+.footerLinks:last-child {
+    margin-right: 0;
+}
+
+.footerLinks a {
+    color: white;
+    font-size: 1em;
+    display: block;
+    padding: 0.5em;
+}
+
+.footerLinks a:hover,
+.footerLinks a:focus,
+.footerLinks a:active {
+    background-color: white;
+    color: #0f0026;
+}
+
+#creditos {
+    font-size: 0.75em;
+}
+
+/** estilo geral do blog incorporado **/
+
+#blogfig {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-left: 0.1em solid white;
+    border-right: 0.1em solid white;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: -0.8em;
+}
+
+#blogdiv {
+    position: relative;
+    padding-bottom: 50em;
+    height: 0;
+}
+
+#blogdiv iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ***** CURRÍCULO ***** */
+
+#currTitle {
+    width: 7em;
+}
+
+#currTitleEn {
+    width: 11em;
+}
+
+.currUl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.currLi {
+    padding-bottom: 1em;
+}
+
+.currLi:before {
+    content: "•";
+    padding-right: 0.5em;
+}
+
+.currP {
+    text-align: justify;
+    padding-bottom: 1em;
+}
+
+#curriculo {
+    width: 100%;
+}
+
+h3, h4 {
+    background-color: #1e004d;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.5em;
+    font-family: verdana;
+    font-weight: normal;
+    text-transform: uppercase;    
+}
+
+.pdf {
+    width: 100%;
+    max-width: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pdfLink:hover,
+.pdfLink:focus,
+.pdfLink:active {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+/* ***** PORTFÓLIO ***** */
+
+.portP {
+    text-align: justify;
+}
+
+#audiovTitle {
+    width: 8em;
+}
+
+#audiovTitleEn {
+    width: 9em;
+}
+
+.audiovDesc {
+    font-weight: 700;
+}
+
+.figureVideo {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.containerVideo {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;    
+}
+
+.containerVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#progTitle {
+    width: 9em;
+}
+
+/* LAYOUT PARA TABLETS */
+
+@media all and (min-width: 45em) {
+
+    main {
+        padding-bottom: 8em;
+    }
+
+    footer {
+        padding-bottom: 2.5em;
+    }
+
+    .links {
+        display: inline-block;        
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        border-top: 0;
+        font-size: 1.25em;
+    }
+
+    .links:last-child {
+        border-bottom: 0;
+    }
+
+    .links a {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        background-color: #0f0026;
+    }
+
+    .navegacao {
+        text-align: center;
+    }
+
+    .navegacao, .navegacao:hover, .navegacao:focus, .navegacao:active {
+        height: 5.5em;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .figureVideo {
+        width: 50%;
+    }
+
+    #blogfig {
+        margin-bottom: -0.4em;
+    }
+
+} 
+
+/* LAYOUT PARA COMPUTADORES E NOTEBOOKS */
+
+@media all and (min-width: 60em) {
+
+    #sobre {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 25em;
+    }
+
+    #audiovisual, #programacao {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #sobre {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 25em;
+    }
+
+    #descricao {
+        width: 65%;
+        float: left;
+        display: inline-block;        
+    }
+
+    #divFoto {
+        width: 30%;
+        float: right;
+        display: inline-block;
+    }
+
+    #fotoThales {
+        margin-right: 0;
+    }
+
+    #curriculo, #contato {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #portfolio1 {
+        width: 40%;
+        float: left;
+        display: inline-block;
+    }
+
+    #portfolio2 {
+        width: 40%;
+        float: right;
+        display: inline-block;
+    }
+
+    .figureVideo {
+        width: 32%;
+    }
+
+    #blogfig {
+        width: 80%;
+    }
+
+}																
